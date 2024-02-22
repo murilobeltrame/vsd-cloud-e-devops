@@ -21,3 +21,4 @@ graph LR;
     Alpine
     Android
 ```
+\* https://en.wikipedia.org/wiki/List_of_Linux_distributions

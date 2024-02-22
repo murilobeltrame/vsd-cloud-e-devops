@@ -11,13 +11,13 @@ Pela sua natureza aberta - mas não necessariamente livre - tem amplo suporte a 
 
 ```mermaid
 graph LR;
-    Debian-->Ubuntu;
-    Debian-->Kali;
-    RedHat-->Fedora;
-    Fedora-->CoreOS;
-    RedHat-->"Amazon Linux";
-    RedHat-->"Oracle Linux";
-    Slackware-->openSUSE;
-    Alpine;
-    Android;
+    Debian-->Ubuntu
+    Debian-->Kali
+    rhel[Red Hat Enterprise Linux]-->Fedora
+    Fedora-->CoreOS
+    rhel-->amazonLinux[Amazon Linux];
+    rhel-->oracleLinux[Oracle Linux]
+    Slackware-->openSUSE
+    Alpine
+    Android
 ```

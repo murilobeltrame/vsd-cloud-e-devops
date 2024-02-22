@@ -4,7 +4,7 @@
 
 1. **Linux instrumental e Bash**
     1. [Introdução ao Linux](./docs/Linux%20instrumental%20e%20Bash/Introdução%20ao%20Linux.md)
-    2. Navegar e manipular arquivos
+    2. [Navegar e manipular arquivos](./docs/Linux%20instrumental%20e%20Bash/Navegar%20e%20manipular%20arquivos.md)
     3. Permissões de arquivos e diretórios
     4. Gestão de processos
     5. Gerenciamento de pacotes

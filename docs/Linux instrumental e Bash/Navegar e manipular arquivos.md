@@ -17,6 +17,7 @@
 * `cp`, copia um arquivo ou diretório;
 * `mv`, move um arquivo ou diretório;
 * `rm`, remove um arquivo ou diretório;
+* `cat`, `more`, `less`, exibe o conteúdo do arquivo;
 
 ## Aplicativos
 

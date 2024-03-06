@@ -10,6 +10,10 @@
     5. [Gerenciamento de pacotes](./docs/Linux%20instrumental%20e%20Bash/Gerenciamento%20de%20pacotes.md)
     7. [Introdução ao Bash scripting](./docs/Linux%20instrumental%20e%20Bash/Introdução%20ao%20Bash%20scripting.md)
 2. Git e GitHub
+    1. [Visão geral](./docs/Git%20e%20GitHub/Visão%20geral.md)
+    2. [Comandos básicos]()
+    3. Branching e Merging
+    4. Repositórios remotos com GitHub
 3. DevOps e Automação
 4. Cloud Computing com Azure
 5. Criação e Orquestração de contêineres

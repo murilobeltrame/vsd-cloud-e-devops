@@ -118,3 +118,5 @@ Script uma calculadora.<br />
 * Após isso deve perguntar o primeiro valor para a operação;
 * Após isso deve perguntar o segundo valor para a operação;
 * Deve imprimir o resultado da operação;
+
+[Correção Introdução ao Bash scripting](./Correção%20Introdução%20ao%20Bash%20scripting.sh)

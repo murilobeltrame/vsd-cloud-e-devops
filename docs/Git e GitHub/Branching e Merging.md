@@ -14,11 +14,13 @@ gitGraph
     commit
     branch develop
     checkout develop
+    commit
     branch feature/foo
     checkout feature/foo
     commit
     commit
     checkout develop
+    commit
     branch feature/bar
     checkout feature/bar
     commit

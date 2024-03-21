@@ -12,8 +12,8 @@
 2. Git e GitHub
     1. [Visão geral](./docs/Git%20e%20GitHub/Visão%20geral.md)
     2. [Comandos básicos](./docs/Git%20e%20GitHub/Comandos%20básicos.md)
-    3. Branching e Merging
-    4. Repositórios remotos com GitHub
+    3. [Branching e Merging](./docs/Git%20e%20GitHub/Branching%20e%20Merging.md)
+    4. [Repositórios remotos com GitHub](./docs/Git%20e%20GitHub/Repositórios%20remotos%20com%20GitHub.md)
 3. DevOps e Automação
 4. Cloud Computing com Azure
 5. Criação e Orquestração de contêineres

@@ -16,11 +16,13 @@ gitGraph
     commit
     commit
     branch release/foo
+    checkout main
     commit
     commit
     commit
     commit
     branch release/bar
+    checkout main
 ```
 
 * **Git Flow**

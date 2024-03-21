@@ -26,7 +26,7 @@ gitGraph
     checkout feature/bar
     commit
     checkout develop
-    merge feature/foo
+    merge feature/bar
     branch release/bar
     checkout release/bar
     commit

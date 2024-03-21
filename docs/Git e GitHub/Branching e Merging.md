@@ -7,6 +7,28 @@ _Branching_ significa que você pode criar uma ramificação no histórico do re
 _Merging_ é o processo de unir uma ramificação a outra integrando assim o trabalho de multiplas frentes.<br />
 Existem diferentes estratégias para _Branching_. Abaixo as mais comuns:
 
+* **Trunk-Based Development**
+
+```mermaid
+gitGraph
+    commit
+    commit
+    commit
+    commit
+    branch release/foo
+    checkout release/foo
+    checkout main
+    merge release/foo
+    commit
+    commit
+    commit
+    commit
+    branch release/bar
+    checkout release/bar
+    checkout main
+    merge release/bar
+```
+
 * **Git Flow**
 
 ```mermaid
@@ -30,11 +52,11 @@ gitGraph
     commit
     checkout develop
     merge feature/bar
-    branch release/bar
-    checkout release/bar
+    branch release/xpto
+    checkout release/xpto
     commit
     checkout main
-    merge release/bar
+    merge release/xpto
     checkout develop
     merge main
 ```

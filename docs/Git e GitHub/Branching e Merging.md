@@ -60,3 +60,5 @@ gitGraph
     checkout develop
     merge main
 ```
+
+[Mais sobre Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html#)

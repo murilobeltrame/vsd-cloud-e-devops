@@ -18,6 +18,7 @@ gitGraph
     checkout feature/foo
     commit
     commit
+    checkout develop
     branch feature/bar
     checkout feature/bar
     commit

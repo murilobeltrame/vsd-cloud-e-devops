@@ -16,12 +16,16 @@ gitGraph
     commit
     commit
     branch release/foo
+    checkout release/foo
+    commit
     checkout main
     commit
     commit
     commit
     commit
     branch release/bar
+    checkout release/bar
+    commit
     checkout main
 ```
 

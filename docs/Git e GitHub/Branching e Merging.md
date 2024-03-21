@@ -18,6 +18,13 @@ gitGraph
     checkout feature/foo
     commit
     commit
+    branch feature/bar
+    checkout feature/bar
+    commit
+    checkout develop
+    merge feature/foo
+    checkout feature/bar
+    commit
     checkout develop
     merge feature/foo
     branch release/bar

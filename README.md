@@ -15,6 +15,11 @@
     3. [Branching e Merging](./docs/Git%20e%20GitHub/Branching%20e%20Merging.md)
     4. [Repositórios remotos com GitHub](./docs/Git%20e%20GitHub/Repositórios%20remotos%20com%20GitHub.md)
 3. DevOps e Automação
+    1. [O que é DevOps](./docs/DevOps%20e%20Automação/O%20que%20é%20DevOps.md)
+    2. [O que é CI CD](./docs/DevOps%20e%20Automação/O%20que%20é%20CI%20CD.md)
+    3. [Conhecendo o GitHub Actions](./docs/DevOps%20e%20Automação/Conhecendo%20o%20GitHub%20Actions.md)
+    3. Fazendo meu primeiro CI
+    4. Fazendo meu primeiro CD
 4. Cloud Computing com Azure
 5. Criação e Orquestração de contêineres
 6. Avançando com DevOps no Azure DevOps

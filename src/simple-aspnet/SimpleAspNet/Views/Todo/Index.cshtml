@@ -1,0 +1,16 @@
+@model IEnumerable<Todo>
+@{
+    ViewData["Title"] = "Todos";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Todos</h1>
+    <ul>
+        @foreach (var todo in Model) {
+            <li>
+                @Html.DisplayFor(t => todo.Description) 
+                [até @Html.DisplayFor(t => todo.DueDate)]
+            </li>
+        }
+    </ul>
+</div>

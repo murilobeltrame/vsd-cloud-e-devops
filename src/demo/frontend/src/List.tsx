@@ -11,7 +11,7 @@ function List () {
     })
 
     const mutation = useMutation({
-        mutationFn: (patchingTodo) => fetch(`http://localhost:8080/Todos/${patchingTodo.id}`, {
+        mutationFn: (patchingTodo: {id: number, completed: boolean}) => fetch(`http://localhost:8080/Todos/${patchingTodo.id}`, {
             method: 'PATCH',
             body: JSON.stringify({completed: patchingTodo.completed}),
             headers: new Headers({

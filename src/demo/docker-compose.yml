@@ -1,0 +1,41 @@
+version: "3"
+
+services:
+  app:
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+      # args:
+      #   - BACKEND_URL=http://api:8080
+    ports:
+      - 8081:80
+  api:
+    build:
+      context: backend
+      dockerfile: Dockerfile
+    depends_on:
+      mssql:
+        condition: service_healthy
+    environment:
+      - ASPNETCORE_ConnectionStrings:TodosDatabase=Server=mssql;Database=Todos;User Id=sa;Password=${MSSQL_PASSWORD};TrustServerCertificate=True;
+    ports:
+      - "8080:8080"
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "/opt/mssql-tools/bin/sqlcmd",
+          "-Usa",
+          "-P${MSSQL_PASSWORD}",
+          "-Q",
+          "select 1",
+        ]
+      interval: 1s
+      retries: 30
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=${MSSQL_PASSWORD}
+    ports:
+      - "14333:1433"

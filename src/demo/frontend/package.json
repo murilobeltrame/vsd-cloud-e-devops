@@ -22,6 +22,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@azure/static-web-apps-cli": "^1.1.9",
     "@tanstack/eslint-plugin-query": "^5.43.1",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",

@@ -7,11 +7,11 @@ function List () {
 
     const query = useQuery({
         queryKey: ['todoData'],
-        queryFn: () => fetch('http://localhost:8080/Todos').then(res => res.json())
+        queryFn: () => fetch(`${import.meta.env.VITE_API_BASE_URL}/Todos`).then(res => res.json())
     })
 
     const mutation = useMutation({
-        mutationFn: (patchingTodo: {id: number, completed: boolean}) => fetch(`http://localhost:8080/Todos/${patchingTodo.id}`, {
+        mutationFn: (patchingTodo: {id: number, completed: boolean}) => fetch(`${import.meta.env.VITE_API_BASE_URL}/Todos/${patchingTodo.id}`, {
             method: 'PATCH',
             body: JSON.stringify({completed: patchingTodo.completed}),
             headers: new Headers({

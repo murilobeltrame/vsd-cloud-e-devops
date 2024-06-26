@@ -10,8 +10,8 @@ builder.Services.AddSwaggerGen();
 const string defaultPolicy = "__defaultCorsPolicy";
 builder.Services.AddCors(options => options.AddPolicy(defaultPolicy, policy => 
     policy
+        .WithOrigins("http://*.azurestaticapps.net", "https://*.azurestaticapps.net")
         .SetIsOriginAllowedToAllowWildcardSubdomains()
-        //.WithOrigins("http://*.zzz.com", "https://*.zzz.com")
         .SetIsOriginAllowed(origin => new Uri(origin).IsLoopback)
         .AllowAnyHeader()
         .AllowAnyMethod()));

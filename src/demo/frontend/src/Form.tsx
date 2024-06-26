@@ -13,7 +13,7 @@ function Form () {
     const queryClient = useQueryClient();
 
     const mutation = useMutation({
-        mutationFn: (newTodo: {description: string, dueDate: string}) => fetch('http://localhost:8080/Todos', {
+        mutationFn: (newTodo: {description: string, dueDate: string}) => fetch(`${import.meta.env.VITE_API_BASE_URL}/Todos`, {
             method: 'POST',
             body: JSON.stringify(newTodo),
             headers: new Headers({

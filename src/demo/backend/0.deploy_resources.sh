@@ -48,6 +48,10 @@ az webapp create \
     --plan $APPSERVICE_PLAN_NAME \
     --runtime "DOTNETCORE:8.0"
     
+az webapp cors add \
+    --name $APPSERVICE_NAME \
+    --resource-group $RESOURCE_GROUP_NAME \
+    --allowed-origins '*'
 
 # Provision Azure SQL Database
 SQL_SERVER_NAME=$RESOURCE_GROUP_NAME"-sql-server"

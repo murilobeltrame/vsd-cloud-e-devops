@@ -1,4 +1,8 @@
 FROM node:22-alpine AS builder
+
+ARG API_BASE_URL
+ENV VITE_API_BASE_URL=${API_BASE_URL} 
+
 WORKDIR /src
 COPY package.json .
 COPY package-lock.json .

@@ -1,0 +1,15 @@
+# create k8s service that expose the frontend application through port 80
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-service
+  namespace: demo-ns
+spec:
+  type: LoadBalancer
+  externalTrafficPolicy: Cluster
+  selector:
+    app: frontend
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80

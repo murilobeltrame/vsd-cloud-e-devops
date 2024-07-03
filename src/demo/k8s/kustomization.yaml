@@ -2,6 +2,14 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - namespace.yaml
-  - backend_service.yaml
-  - frontend_service.yaml
+- namespace.yaml
+- backend_service.yaml
+- frontend_service.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+secretGenerator:
+  - name: backend-secrets
+    literals:
+      - CONNECTION_STRING=

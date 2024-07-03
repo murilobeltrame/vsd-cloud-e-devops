@@ -1,0 +1,28 @@
+# create a k8s deployment for frontend service
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      automountServiceAccountToken: false
+      containers:
+      - name: frontend
+        image: murilobeltrame/demo-frontend:latest
+        ports:
+          - containerPort: 80
+        resources:
+          limits:
+            cpu: '1'
+            memory: 200Mi
+          requests:
+            cpu: '0.25'
+            memory: 100Mi
